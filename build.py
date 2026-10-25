@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent
 DOCS = [
     ("privacy", "Privacy Policy", "What the app stores, and why none of it reaches us."),
     ("terms", "Terms of Service", "The terms you accept by using the app."),
+    ("support", "Support", "How to get help, and the questions that come up most."),
 ]
 
 PAGE = """<!DOCTYPE html>
@@ -96,6 +97,7 @@ footer a {{ color:var(--muted); }}
 <footer><div class="wrap">
   <a href="{home}privacy/">Privacy Policy</a>
   <a href="{home}terms/">Terms of Service</a>
+  <a href="{home}support/">Support</a>
   <a href="mailto:hello@entelana.com">hello@entelana.com</a>
 </div></footer>
 </body>

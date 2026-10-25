@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — sanā</title>
+<meta name="description" content="How to get help, and the questions that come up most.">
+<style>
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+:root {
+  --bg:#ffffff; --text:#111111; --body:#2e2e2e; --muted:#6b6b6b;
+  --rule:#e2e2e2; --surface:#f6f6f4;
+}
+@media (prefers-color-scheme:dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#0e0e0e; --text:#f2f1ee; --body:#cfcdc8; --muted:#8e8c87;
+    --rule:#2a2a2a; --surface:#181817;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#0e0e0e; --text:#f2f1ee; --body:#cfcdc8; --muted:#8e8c87;
+  --rule:#2a2a2a; --surface:#181817;
+}
+html { -webkit-text-size-adjust:100%; }
+body {
+  background:var(--bg); color:var(--body);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+.wrap { max-width:680px; margin:0 auto; padding:0 16px; }
+header { border-bottom:1px solid var(--rule); }
+header .wrap { padding:22px 16px; display:flex; align-items:baseline; gap:14px; }
+.mark { font-size:1.2rem; font-weight:700; letter-spacing:.06em; color:var(--text); text-decoration:none; }
+.kicker { font-size:.8rem; color:var(--muted); }
+main .wrap { padding:44px 16px 72px; }
+h1 { font-size:1.9rem; line-height:1.2; font-weight:700; color:var(--text); letter-spacing:-.02em; margin-bottom:10px; }
+h2 { font-size:1.18rem; font-weight:700; color:var(--text); letter-spacing:-.01em; margin:40px 0 14px; }
+h3 { font-size:1rem; font-weight:600; color:var(--text); margin:26px 0 10px; }
+p { margin-bottom:15px; }
+ul,ol { padding-left:22px; margin-bottom:15px; }
+li { margin-bottom:7px; }
+strong { color:var(--text); font-weight:650; }
+hr { border:0; border-top:1px solid var(--rule); margin:34px 0; }
+a { color:var(--text); text-decoration:underline; text-underline-offset:2px; }
+blockquote {
+  margin:0 0 18px; padding:14px 18px; background:var(--surface);
+  border-left:3px solid var(--rule); border-radius:2px;
+}
+blockquote p:last-child { margin-bottom:0; }
+.table-wrap { overflow-x:auto; margin:16px 0 24px; }
+table { width:100%; border-collapse:collapse; font-size:.9rem; }
+th { text-align:left; font-weight:600; color:var(--muted); padding:10px 12px;
+      background:var(--surface); border-bottom:1px solid var(--rule); }
+td { padding:10px 12px; border-bottom:1px solid var(--rule); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+.cards { list-style:none; padding:0; }
+.cards li { border:1px solid var(--rule); border-radius:4px; padding:18px 20px; margin-bottom:12px; }
+.cards a { font-weight:650; font-size:1.02rem; }
+.cards span { display:block; color:var(--muted); font-size:.9rem; margin-top:4px; }
+footer { border-top:1px solid var(--rule); }
+footer .wrap { padding:26px 16px 40px; color:var(--muted); font-size:.85rem;
+                display:flex; gap:18px; flex-wrap:wrap; }
+footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="mark" href="../">sanā</a>
+  <span class="kicker">training and rehabilitation planner</span>
+</div></header>
+<main><div class="wrap">
+<h1>sanā Support</h1>
+<p>Questions, bugs and suggestions: <strong>hello@entelana.com</strong></p>
+<p>sanā is made by one person. Replies may take a few days, but every message is read.</p>
+<hr>
+<h2>Reporting a problem</h2>
+<p>The useful thing to include is what you were doing when it happened — which screen, what you tapped, what you expected instead.</p>
+<p>If you are on the TestFlight beta, send it through TestFlight rather than email: take a screenshot, then share it to TestFlight. It arrives with your device model and the exact build attached, which saves a round of questions.</p>
+<hr>
+<h2>Common questions</h2>
+<h3>Where is my data?</h3>
+<p>On your phone, in the app's own storage, as JSON files. There is no account and no server. See the <a href="../privacy/">Privacy Policy</a> for what that does and does not protect.</p>
+<h3>Will I lose everything if I change phones?</h3>
+<p>Not if you move it. <strong>Settings → Export</strong> writes a single file holding your timeline, measurements, profile, your own exercises, saved templates and generated programs. Importing it on the new phone puts all of it back.</p>
+<p>Importing <strong>replaces</strong> what is in the app rather than merging. Two histories of the same training cannot be reconciled from the outside, and merging would silently double every session that exists in both.</p>
+<p>If iCloud Backup is on, iOS also includes the app in your device backup, so restoring a new phone from backup brings sanā's data with it.</p>
+<h3>Does deleting the app delete my training?</h3>
+<p>It removes the files from your phone. If iCloud Backup is on, a copy remains in that backup until you manage it in iOS Settings. We never had a copy either way.</p>
+<h3>The app suggested an exercise I can't do</h3>
+<p>Swap it. Every slot in a generated program offers alternatives that serve the same purpose, and the structure holds whichever you pick. You can also move, skip or delete any planned session — once a program is on your days, its sessions are ordinary entries.</p>
+<h3>Why won't it give me a threshold for my injured joint?</h3>
+<p>Because it cannot assess you. Where a measurement should decide what you train, sanā stays inert until a qualified clinician gives you a number and you record it, along with who set it and when. It guides from general training knowledge; it is not a doctor, a physiotherapist or a substitute for being assessed by one.</p>
+<h3>Can I add my own exercises?</h3>
+<p>Yes. An exercise you add answers the same questions the bundled ones do, so a generated program can choose it rather than ignoring it.</p>
+<hr>
+<h2>Also</h2>
+<ul><li><a href="../privacy/">Privacy Policy</a></li><li><a href="../terms/">Terms of Service</a></li></ul>
+</div></main>
+<footer><div class="wrap">
+  <a href="../privacy/">Privacy Policy</a>
+  <a href="../terms/">Terms of Service</a>
+  <a href="../support/">Support</a>
+  <a href="mailto:hello@entelana.com">hello@entelana.com</a>
+</div></footer>
+</body>
+</html>
